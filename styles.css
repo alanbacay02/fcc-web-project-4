@@ -1,0 +1,282 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+main, body {
+  background-color: #F2F2F2;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  position: fixed;
+  width: 100%;
+  height: 5%;
+  padding: 8px 12px 5px;
+  top: 0;
+  background-color: #F2F2F2;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-img-div a {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#header-img {
+  width: 50px;
+  margin-right:8px;
+}
+
+header a {
+  color:#38220f;
+  /* Night Mode Temp */
+  /* color: gray; */
+  transition: font-size 0.5s;
+}
+
+.nav-link:hover {
+  font-size: 18px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.hero {
+  display: block;
+  text-align: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.hero h1 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 24px;
+}
+
+.hero p, input::placeholder, button {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.hero p {
+  margin: 16px 10%;
+}
+
+.hero #email {
+  width: 250px;
+  border: 1px solid #8C8C8C;
+  border-radius: 5px;
+  padding: 5px 8px;
+}
+
+.hero #submit {
+  margin-top: 10px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  border-width: 1px;
+}
+
+.features {
+  padding-top: 50px;
+}
+
+.features h2 {
+  font-family: 'Barlow Condensed', sans-serif;
+  padding: 0 0 8px;
+  margin: 0;
+}
+
+.features p {
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.features-div {
+  margin: auto;
+  display: flex;
+  max-width: 800px;
+  padding: 30px 0;
+}
+
+.features .desc-icon {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  width: 20vw;
+  color: #5e4026;
+}
+
+.features .desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80vw;
+}
+
+#video {
+  display: block;
+  margin: 40px auto;
+}
+
+.pricing {
+  display: grid;
+  grid-template-columns: repeat(3, 230px);
+  column-gap: 10px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.product .title {
+  background-color: #c5c5c5;
+  font-family: 'Barlow Condensed', sans-serif;
+  letter-spacing: 1px;
+}
+
+.product .title h2 {
+  margin: 5px;
+}
+
+.product h1 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.product ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.product button {
+  margin: 35px 55px 20px;
+}
+
+footer {
+  background-color: #cfcfcf;
+  width: 100%;
+  text-align: right;
+  padding: 20px 15px;
+  margin-top: 50px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+footer ul, footer p {
+  margin: 0;
+  margin-top: 5px;
+}
+
+footer li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0 8px;
+}
+
+footer a {
+  color: black;
+}
+
+footer p {
+  font-size: 12px;
+  margin-right: 8px;
+}
+
+@media only screen and (min-width: 425px) and (max-width: 650px) {
+  .pricing {
+    display: grid;
+    grid-template-columns: 230px;
+    grid-template-rows: repeat(1, auto) ;
+    row-gap: 10px;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  #video {
+    max-width: 400px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+  nav li {
+    padding: 0;
+    font-size: 12px;
+  }
+  #header-img {
+    width: 35px;
+  }
+  .header-img-div a {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+  .pricing {
+    display: grid;
+    grid-template-columns: 230px;
+    grid-template-rows: repeat(1, auto) ;
+    row-gap: 10px;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  #video {
+    max-width: 305px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+  .features-div {
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .features .desc-icon {
+    display: none;
+    font-size: 0;
+    visibility: hidden;
+    width: 0;
+  }
+  .features .desc {
+    text-align: center;
+     padding: 0;
+  }
+  nav ul {
+    display: none;
+    visibility: hidden;
+  }
+  #header-img {
+    width: 40px;
+  }
+  .header-img-div a {
+    font-size: 18px;
+  }
+  footer a {
+    font-size: 14px;
+  }
+  footer p {
+    font: 12px;
+  }
+}
