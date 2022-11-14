@@ -17,6 +17,7 @@ header {
   width: 100%;
   height: 5%;
   padding: 8px 12px 5px;
+  margin-top: 13px;
   top: 0;
   background-color: #F2F2F2;
 }
@@ -267,16 +268,20 @@ footer p {
     display: none;
     visibility: hidden;
   }
-  #header-img {
-    width: 40px;
-  }
-  .header-img-div a {
-    font-size: 18px;
-  }
   footer a {
     font-size: 14px;
   }
   footer p {
     font: 12px;
+  }
+  #header-img {
+    width: 30px;
+    margin-right: 5px;
+  }
+  .header-img-div a {
+    font-size: 14px;
+  }
+  .hero {
+    margin-top: 90px;
   }
 }
